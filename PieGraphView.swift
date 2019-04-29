@@ -80,7 +80,7 @@ class PieGraphView: UIView {
            
             CGContextSetFillColor(context, CGColorGetComponents(color.CGColor));
 
-            //context.setFillColor(<#T##color: CGColor##CGColor#>)
+            //context.setFillColor(x, y, radius/2,  end_angle, start_angle, 1)
             
             context.closePath();
             context.fillPath();
