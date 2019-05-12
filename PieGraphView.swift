@@ -78,10 +78,10 @@ class PieGraphView: UIView {
             //ここのコメントアウトを解除すると、中くりぬき
             //CGContextAddArc(context, x, y, radius/2,  end_angle, start_angle, 1);
            
-            CGContextSetFillColor(context, CGColorGetComponents(color.CGColor));
+            //CGContextSetFillColor(context, CGColorGetComponents(color.CGColor));
 
-            //context.setFillColor(x, y, radius/2,  end_angle, start_angle, 1)
-            
+            context.setFillColor(self.tintColor.cgColor)
+
             context.closePath();
             context.fillPath();
             start_angle = end_angle;
